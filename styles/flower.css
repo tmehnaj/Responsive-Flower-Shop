@@ -125,10 +125,11 @@ nav ul li a:hover {
     text-align: center;
 }
 
-.our-plants-desc{
+.our-plants-desc {
     max-width: 888px;
     margin: 1rem auto 0 auto;
 }
+
 .card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -137,36 +138,41 @@ nav ul li a:hover {
     column-gap: 20px;
     row-gap: 30px;
 }
+
 .card img {
     width: 100%;
     margin-bottom: 30px;
 }
-.flower-name{
+
+.flower-name {
     font-weight: 500;
 }
-.flower-price{
+
+.flower-price {
     font-weight: 600;
 }
-.card p{
+
+.card p {
     margin: 10px 0 30px 0;
 }
 
 /* plants-lover section related styles */
 
-.plants-lover{
+.plants-lover {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.plants-lover-right{
+.plants-lover-right {
     max-width: 540px;
 }
-.plants-lover-right li{
+
+.plants-lover-right li {
     padding-top: 20px;
 }
 
-#badge{
+#badge {
     max-width: 286px;
     display: block;
     position: relative;
@@ -174,7 +180,90 @@ nav ul li a:hover {
     margin-bottom: -160px;
 }
 
+/* deals section related styles */
+.deals-top {
+    text-align: center;
+}
 
+.deals-top p {
+    max-width: 888px;
+    margin: 16px auto;
+}
+
+/* join section related styles */
+.join {
+    background-image: url("/assets/news-letter-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 533px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.join h3 {
+    color: white;
+}
+
+.join form {
+    display: flex;
+    max-width: 830px;
+    width: 100%;
+    margin-top: 23px;
+}
+
+.join input[type="email"] {
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: white;
+    color: var(--text-color);
+    border: none;
+    padding: 15px 20px;
+    width: 75%;
+}
+
+.join input[type="submit"] {
+    width: 25%;
+}
+
+/* footer */
+footer {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr); */
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+footer .column-1 {
+    max-width: 360px;
+}
+
+footer .column-1 img {
+    padding-bottom: 16px;
+}
+
+footer ul li {
+    list-style: none;
+    padding-bottom: 32px;
+}
+
+footer ul li:last-child {
+    padding-bottom: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #6B7280;
+}
+footer .column-4 img{
+    margin-right: 24px;
+}
+footer .column-4 img:last-child{
+    margin-right: 0;
+}
 
 /* responsive for small device */
 @media screen and (max-width: 576px) {
@@ -226,25 +315,51 @@ nav ul li a:hover {
     }
 
     .card-container {
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 50px;
-    font-size: 1rem;
-    column-gap: 20px;
-    row-gap: 30px;
-}
-.plants-lover{
-    flex-direction: column;
-    margin-top: 40px;
-}
-#badge{
-    display: none;
-}
-.plants-lover-right{
-    margin: 20px 0;
-}
-.plants-lover-right ul{
-   margin-left: 20px;
-}
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 50px;
+        font-size: 1rem;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
 
+    .plants-lover {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    #badge {
+        display: none;
+    }
+
+    .plants-lover-right {
+        margin: 20px 0;
+    }
+
+    .plants-lover-right ul {
+        margin-left: 20px;
+    }
+
+    .join {
+        height: 300px;
+        margin: 50px 0 0 0;
+    }
+
+    .join form {
+        width: 90%;
+    }
+
+    .join input[type="submit"] {
+        padding: 20px 12px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    footer >  div{
+        padding-bottom: 32px;
+    }
+    footer ul li{
+        padding-bottom: 32px;
+    }
 
 }
