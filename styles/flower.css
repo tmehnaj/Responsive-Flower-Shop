@@ -233,7 +233,7 @@ footer {
     grid-template-columns: repeat(4, 1fr); */
     display: flex;
     justify-content: space-between;
-    padding: 50px;
+    padding: 50px 0;
 
 }
 
