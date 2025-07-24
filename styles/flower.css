@@ -172,12 +172,26 @@ nav ul li a:hover {
     padding-top: 20px;
 }
 
+/* css animation */
+@keyframes spin {
+    0%{transform: rotate(0deg);}
+    /* 25%{transform: rotate(45deg);}
+    50%{transform: rotate(90deg);}
+    75%{transform: rotate(135deg);} */
+    100%{transform: rotate(360deg);}
+}
 #badge {
     max-width: 286px;
     display: block;
     position: relative;
     margin-left: 347px;
     margin-bottom: -160px;
+    filter: drop-shadow(-8px 14px 2px rgb(92, 92, 92));
+    /* animation-name: spin;
+    animation-duration: 19s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+    animation: spin 21s linear infinite ;
 }
 
 /* deals section related styles */
@@ -188,6 +202,38 @@ nav ul li a:hover {
 .deals-top p {
     max-width: 888px;
     margin: 16px auto;
+}
+.deals-bottom{
+    display: flex;
+    gap: 28px;
+    /* justify-content: space-between; */
+}
+.deals-bottom-left{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.deals-bottom-right{
+    border: 1px solid black;
+    width: 100%;
+    flex-grow: auto;
+}
+.deals-image-1,
+.deals-image-2,
+.deals-image-3{
+    position: relative;
+}
+.image-text-1,
+.image-text-2,
+.image-text-3{
+ position: absolute;
+ display: inline;
+ color: yellow;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 2;
 }
 
 /* join section related styles */
