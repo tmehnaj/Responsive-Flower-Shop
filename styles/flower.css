@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -85,6 +85,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
+    display: inline-block;
     text-decoration: none;
     font-size: 1.12rem;
     color: var(--link-color);
@@ -92,7 +93,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #000000;
-    transition: 0.7s;
+    transition:  0.6s;
 }
 
 #home {
@@ -162,6 +163,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 210px;
 }
 
 .plants-lover-right {
@@ -171,16 +173,18 @@ nav ul li a:hover {
 .plants-lover-right li {
     padding-top: 20px;
 }
-
+.plants-lover-left{
+    position: relative;
+}
+#plants-lover-left-image{
+    display: block;
+    height: 100%;
+}
 /* css animation */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
     }
-
-    /* 25%{transform: rotate(45deg);}
-    50%{transform: rotate(90deg);}
-    75%{transform: rotate(135deg);} */
     100% {
         transform: rotate(360deg);
     }
@@ -188,16 +192,18 @@ nav ul li a:hover {
 
 #badge {
     max-width: 286px;
-    display: block;
-    position: relative;
-    margin-left: 347px;
-    margin-bottom: -160px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -110px;
+    margin-right: -100px;
     filter: drop-shadow(-8px 14px 2px rgb(92, 92, 92));
     /* animation-name: spin;
     animation-duration: 19s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; */
     animation: spin 21s linear infinite;
+    z-index: 1;
 }
 
 /* deals section related styles */
@@ -251,6 +257,7 @@ nav ul li a:hover {
     font-weight: 700;
     font-size: 1.25rem;
     color: white;
+     white-space: nowrap;
 }
 
 .image-text-3 h4 {
@@ -258,11 +265,13 @@ nav ul li a:hover {
     font-weight: 700;
     font-size: 2.5rem;
     color: white;
+    white-space: nowrap;
 }
 
 .deals-bottom button a {
     color: white;
-    font-weight: 500;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .image-text-3 a {
@@ -271,7 +280,8 @@ nav ul li a:hover {
 
 .deals-bottom button {
     background-color: transparent;
-    border: none;
+    border: 2px solid transparent;
+    border-bottom: 2px solid white;
 }
 
 .deals-image-1,
@@ -287,7 +297,7 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .deals-image-1 .overlay,
@@ -489,7 +499,7 @@ footer .column-4 img:last-child {
         padding-bottom: 32px;
     }
     .deals{
-        margin-top: 120px;
+        margin-top: 70px;
     }
     .deals-bottom {
         display: grid;
@@ -503,7 +513,8 @@ footer .column-4 img:last-child {
 .image-text-3 h4 {
     font-size: 1.25rem;
 }
-.image-text-3 a {
+.deals-bottom a {
+    font-weight: 600;
     font-size: 1rem;
 }
 
