@@ -174,12 +174,18 @@ nav ul li a:hover {
 
 /* css animation */
 @keyframes spin {
-    0%{transform: rotate(0deg);}
+    0% {
+        transform: rotate(0deg);
+    }
+
     /* 25%{transform: rotate(45deg);}
     50%{transform: rotate(90deg);}
     75%{transform: rotate(135deg);} */
-    100%{transform: rotate(360deg);}
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
 #badge {
     max-width: 286px;
     display: block;
@@ -191,7 +197,7 @@ nav ul li a:hover {
     animation-duration: 19s;
     animation-timing-function: linear;
     animation-iteration-count: infinite; */
-    animation: spin 21s linear infinite ;
+    animation: spin 21s linear infinite;
 }
 
 /* deals section related styles */
@@ -204,66 +210,78 @@ nav ul li a:hover {
     margin: 16px auto;
 }
 
-.deals-image-3{
+.deals-image-3 {
     grid-area: image3;
 }
-.deals-bottom{
+
+.deals-bottom {
     display: grid;
-    grid-template-areas: 
-    '.  image3 image3'
-    '.  image3 image3';
+    grid-template-areas:
+        '.  image3 image3'
+        '.  image3 image3';
     column-gap: 28px;
     row-gap: 25px;
 }
 
-.deals-bottom img{
+.deals-bottom img {
     display: block;
     height: 100%;
     width: 100%;
     /* object-fit: cover; */
 }
-.deals-image-3 img{
+
+.deals-image-3 img {
     border-radius: 22px;
 }
+
 .deals-image-1 img,
-.deals-image-2 img{
+.deals-image-2 img {
     border-radius: 14px;
 }
+
 .image-text-1,
 .image-text-2,
-.image-text-3{
+.image-text-3 {
     text-align: center;
 }
+
 .image-text-1 h4,
-.image-text-2 h4{
+.image-text-2 h4 {
+    font-family: "Noto Serif", serif;
     font-weight: 700;
     font-size: 1.25rem;
     color: white;
 }
-.image-text-3 h4{
+
+.image-text-3 h4 {
+    font-family: "Noto Serif", serif;
     font-weight: 700;
     font-size: 2.5rem;
-        color: white;
-}
-.deals-bottom button a{
     color: white;
-    font-weight: 500; 
 }
-.image-text-3 a{
+
+.deals-bottom button a {
+    color: white;
+    font-weight: 500;
+}
+
+.image-text-3 a {
     font-size: 1.75rem;
 }
-.deals-bottom button{
-      background-color: transparent;
+
+.deals-bottom button {
+    background-color: transparent;
     border: none;
 }
+
 .deals-image-1,
 .deals-image-2,
-.deals-image-3{
+.deals-image-3 {
     position: relative;
 }
 
 /* overlay */
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,30 +289,31 @@ nav ul li a:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .deals-image-1 .overlay,
-.deals-image-2 .overlay{
+.deals-image-2 .overlay {
     border-radius: 14px;
 }
-.deals-image-3 .overlay{
-     border-radius: 22px;
-}
 
+.deals-image-3 .overlay {
+    border-radius: 22px;
+}
 
 .image-text-1,
 .image-text-2,
-.image-text-3{
- position: absolute;
- display: inline;
- color: yellow;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- z-index: 2;
+.image-text-3 {
+    position: absolute;
+    display: inline;
+    color: yellow;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
 }
 
 /* join section related styles */
 .join {
-    background-image: url("/assets/news-letter-bg.png");
+    background-image: url("../assets/news-letter-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 533px;
@@ -360,10 +379,12 @@ footer ul li a {
     text-decoration: none;
     color: #6B7280;
 }
-footer .column-4 img{
+
+footer .column-4 img {
     margin-right: 24px;
 }
-footer .column-4 img:last-child{
+
+footer .column-4 img:last-child {
     margin-right: 0;
 }
 
@@ -381,7 +402,7 @@ footer .column-4 img:last-child{
     .section-title {
         font-size: 1.5rem;
     }
-
+   
     nav img {
         height: 60px;
         width: auto;
@@ -456,12 +477,34 @@ footer .column-4 img:last-child{
 
     footer {
         flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 0;
     }
-    footer >  div{
+
+    footer>div {
         padding-bottom: 32px;
     }
-    footer ul li{
+
+    footer ul li {
         padding-bottom: 32px;
     }
+    .deals{
+        margin-top: 120px;
+    }
+    .deals-bottom {
+        display: grid;
+        grid-template-areas:
+         '.'
+         '.'
+         'image3';
+        column-gap: 20px;
+        margin-top: 50px;
+    }
+.image-text-3 h4 {
+    font-size: 1.25rem;
+}
+.image-text-3 a {
+    font-size: 1rem;
+}
 
 }
