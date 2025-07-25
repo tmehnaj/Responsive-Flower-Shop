@@ -174,7 +174,7 @@ nav ul li a:hover {
 .plants-lover-right li {
     padding-top: 20px;
     margin-left: 30px;
-    width: 100%;
+    /* width: 100%; */
 }
 .plants-lover-left{
     position: relative;
@@ -477,6 +477,7 @@ footer .column-4 img:last-child {
         margin-left: 20px;
         margin-right: 20px;
         padding-right: 20px;
+        width: 100%;
     }
 
     .join {
